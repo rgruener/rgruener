@@ -1,0 +1,27 @@
+<!doctype html>
+{% load staticfiles %}
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Robert Gruener{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'personalsite/css/foundation.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'personalsite/css/style.css' %}" />
+    <script src="{% static 'personalsite/js/vendor/modernizr.js' %} "></script>
+  </head>
+  <body>
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="panel">
+            {% block content %}{% endblock %}
+            <div class="large-2 medium-2 columns">
+                <p><a href="{% url 'index' %}">home</a></p>
+                <p><a href="{% url 'projects' %}">projects</a></p>
+                <p><a href="{% url 'projects' %}">research</a></p>
+                <p><a href="{% url 'blog' %}">blog</a></p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

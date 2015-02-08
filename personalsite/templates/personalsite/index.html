@@ -1,0 +1,21 @@
+{% extends "personalsite/base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="large-4 medium-4 columns">
+    <img src="{% static 'personalsite/img/me.jpg' %}">
+</div>
+<div class="large-6 medium-6 columns">
+    <p>Hey, my name is Robert Gruener and I am currently working on creating better
+    music recommendations at <a href="https://www.spotify.com">Spotify</a>. Graduating
+    from <a href="http://en.wikipedia.org/wiki/Cooper_Union">Cooper Union</a> with a degree
+    in Electrical Engineering, my interests range from machine learning and signal processing
+    to microcontrollers, robotics, and electronics.
+    </p>
+    <h4><a href="{% static 'personalsite/files/resume.pdf' %}">resume</a></h4>
+    <h4><a href="https://github.com/rgruener/">github</a></h4>
+    <h4><a href="https://www.linkedin.com/pub/robert-gruener/6b/239/676">linkedin</a></h4>
+    <h4><a href="http://open.spotify.com/user/1236245305">spotify</a></h4>
+    <h4><a href="mailto:rjgruener+me@gmail.com">email</a></h4>
+</div>
+{% endblock %}
